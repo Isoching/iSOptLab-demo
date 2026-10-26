@@ -1,0 +1,77 @@
+{
+  "release": "2026-10-26",
+  "status": "passed",
+  "modelCount": 7,
+  "referencePointCount": 1043,
+  "maximumAllowedAbsoluteError": 1e-07,
+  "models": [
+    {
+      "modelId": "cstr-p5-refined",
+      "points": 149,
+      "maximumAbsoluteErrors": {
+        "ethylene_mass_fraction": 1.1102230246251565e-16,
+        "butadiene_mass_fraction": 1.1102230246251565e-16,
+        "reactor_temperature_K": 1.1368683772161603e-13
+      }
+    },
+    {
+      "modelId": "cstr-p5-initial",
+      "points": 149,
+      "maximumAbsoluteErrors": {
+        "ethylene_mass_fraction": 1.1102230246251565e-16,
+        "butadiene_mass_fraction": 1.1102230246251565e-16,
+        "reactor_temperature_K": 1.1368683772161603e-13
+      }
+    },
+    {
+      "modelId": "cstr-gpr-initial",
+      "points": 149,
+      "maximumAbsoluteErrors": {
+        "ethylene_mass_fraction": 3.5498770589725837e-11,
+        "butadiene_mass_fraction": 4.51344517315988e-12,
+        "reactor_temperature_K": 1.594548848515842e-08
+      }
+    },
+    {
+      "modelId": "cstr-ann-initial",
+      "points": 149,
+      "maximumAbsoluteErrors": {
+        "ethylene_mass_fraction": 5.551115123125783e-17,
+        "butadiene_mass_fraction": 0,
+        "reactor_temperature_K": 5.684341886080802e-14
+      }
+    },
+    {
+      "modelId": "peaks-gpr",
+      "points": 149,
+      "maximumAbsoluteErrors": {
+        "response": 1.851852005074761e-13
+      }
+    },
+    {
+      "modelId": "peaks-ann",
+      "points": 149,
+      "maximumAbsoluteErrors": {
+        "response": 2.886579864025407e-15
+      }
+    },
+    {
+      "modelId": "peaks-p12",
+      "points": 149,
+      "maximumAbsoluteErrors": {
+        "response": 6.54608312000704e-13
+      }
+    }
+  ],
+  "checks": [
+    "Seven saved models match Python at 1,043 points, including declared-domain corners; each output absolute error <= 1e-7",
+    "Case Archive scopes navigation; all four CSTR models from both protocols are selectable and survive reload",
+    "Bounds checks, verified presets, live model switching, session history and both prediction download formats work",
+    "Heatmap selection, independent-batch/response comparisons and six real-check CSV downloads work",
+    "All three Peaks inference families, parameter JSON downloads and Chinese/English interfaces work",
+    "Archive and every case view fit 1440, 768 and 390 pixel widths",
+    "Relative assets and deep links work beneath a GitHub Pages project prefix"
+  ],
+  "pageErrors": [],
+  "networkErrors": []
+}
